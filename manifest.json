@@ -1,0 +1,17 @@
+{
+	"name": "JIRA Plugin",
+	"version": "0.1",
+	"manifest_version": 2,
+	"description": "Small JIRA plugin.",
+	"content_scripts": [
+		{
+			"matches": ["https://jira.massiveinteractive.com/*"],
+			"js": ["background.js"],
+			"run_at": "document_start"
+		}
+	],
+	"permissions": [
+		"tabs",
+		"https://jira.massiveinteractive.com/*"
+	]
+}
