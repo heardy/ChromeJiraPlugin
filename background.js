@@ -8,7 +8,8 @@ var BILLINGKEY_ID = "tempo-expenditure-item",
 	PROJECTNAME_ID = "issue-create-project-name";
 
 var PROJECTS = {
-	"TAB" : "TAB IPTV"
+	"TAB" : "TAB IPTV",
+	"FREEVIEW" : "Freeview"
 };
 
 JIRA_PLUGIN = (function(){
@@ -41,7 +42,11 @@ JIRA_PLUGIN = (function(){
 				case PROJECTS.TAB:
 					debug("PROJECTS.TAB=" + PROJECTS.TAB);
 					billingKeyEL.selectedIndex = 2;
-				break;
+					break;
+				case PROJECTS.FREEVIEW:
+					debug("PROJECTS.FREEVIEW=" + PROJECTS.FREEVIEW);
+					billingKeyEL.selectedIndex = 2;
+					break;
 			}
 		}
 	};
